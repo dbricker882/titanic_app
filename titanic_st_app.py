@@ -87,7 +87,7 @@ with left_col:
 
 # Right column: Prediction Interface
 with right_col:
-    st.header("Should You Get On The Ship?")
+    st.header("Life Insurance Offer?")
 
     # User inputs from sidebar
     user_data = get_user_input()
@@ -109,8 +109,8 @@ with right_col:
         prediction = lm2.predict(input_array)
         # st.subheader("Predicted Price")
         if prediction == 0:
-            st.write(f"You will not survive, consider not being poor.")
+            st.write(f"We regret to inform you that your life insurance application has been rejected.Our data models suggest that while your health is excellent, your choice of transportation is historically terminal.")
         else:
-            st.write("You will survive!")
+            st.write("Congratulations! Based on your ticket class and the fact that you aren't a young man in third class, Lloyd's of London has approved your life insurance policy. Your premiums are low because, frankly, we think you're getting on a lifeboat.")
 
 # streamlit run Regr_model_cars.py
