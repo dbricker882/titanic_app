@@ -87,7 +87,7 @@ with left_col:
 
 # Right column: Prediction Interface
 with right_col:
-    st.header("Life Insurance Offer?")
+    st.header("Life Insurance Offer")
 
     # User inputs from sidebar
     user_data = get_user_input()
