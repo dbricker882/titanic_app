@@ -54,7 +54,7 @@ def get_user_input():
 # st.image(image_banner, use_column_width=True)
 
 # Centered title
-st.markdown("<h1 style='text-align: center;'>Thank you for booking with White Star lines. Would you like to add life insurance?</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center;'>Thank you for booking with White Star Lines. Would you like to add life insurance?</h1>", unsafe_allow_html=True)
 
 # Split layout into two columns
 left_col, right_col = st.columns(2)
