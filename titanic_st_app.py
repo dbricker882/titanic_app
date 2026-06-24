@@ -54,14 +54,14 @@ def get_user_input():
 # st.image(image_banner, use_column_width=True)
 
 # Centered title
-st.markdown("<h1 style='text-align: center;'>Will You Survive The Titanic?</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center;'>Thank you for booking with White Star lines. Would you like to add life insurance?</h1>", unsafe_allow_html=True)
 
 # Split layout into two columns
 left_col, right_col = st.columns(2)
 
 # Left column: Feature Importance Interactive Bar Chart
 with left_col:
-    st.header("Feature Importance")
+    st.header("Our Company Values")
 
     # Sort feature importance DataFrame by 'Feature Importance Score'
     final_fi_sorted = final_fi.sort_values(by='Feature Importance Score', ascending=True)
@@ -69,10 +69,9 @@ with left_col:
     # Create interactive bar chart with Plotly
     fig = px.bar(
         final_fi_sorted,
-        x='Feature Importance Score',
+        x='Importance',
         y='Variable',
         orientation='h',
-        title="Feature Importance",
         labels={'Feature Importance Score': 'Importance', 'Variable': 'Feature'},
         text='Feature Importance Score',
         color_discrete_sequence=['#48a3b4']  # Custom bar color
@@ -87,7 +86,7 @@ with left_col:
 
 # Right column: Prediction Interface
 with right_col:
-    st.header("Life Insurance Offer")
+    st.header("Insurance Offer")
 
     # User inputs from sidebar
     user_data = get_user_input()
