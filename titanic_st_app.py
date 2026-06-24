@@ -61,7 +61,7 @@ left_col, right_col = st.columns(2)
 
 # Left column: Feature Importance Interactive Bar Chart
 with left_col:
-    st.header("Our Company Values")
+    st.header("What we value")
 
     # Sort feature importance DataFrame by 'Feature Importance Score'
     final_fi_sorted = final_fi.sort_values(by='Feature Importance Score', ascending=True)
@@ -69,9 +69,10 @@ with left_col:
     # Create interactive bar chart with Plotly
     fig = px.bar(
         final_fi_sorted,
-        x='Importance',
+        x='Feature Importance Score',
         y='Variable',
         orientation='h',
+        title="Feature Importance",
         labels={'Feature Importance Score': 'Importance', 'Variable': 'Feature'},
         text='Feature Importance Score',
         color_discrete_sequence=['#48a3b4']  # Custom bar color
@@ -86,7 +87,7 @@ with left_col:
 
 # Right column: Prediction Interface
 with right_col:
-    st.header("Insurance Offer")
+    st.header("Life Insurance Offer")
 
     # User inputs from sidebar
     user_data = get_user_input()
