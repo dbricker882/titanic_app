@@ -72,7 +72,6 @@ with left_col:
         x='Feature Importance Score',
         y='Variable',
         orientation='h',
-        title="Feature Importance",
         labels={'Feature Importance Score': 'Importance', 'Variable': 'Feature'},
         text='Feature Importance Score',
         color_discrete_sequence=['#48a3b4']  # Custom bar color
