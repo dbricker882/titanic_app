@@ -77,7 +77,7 @@ with left_col:
         color_discrete_sequence=['#48a3b4']  # Custom bar color
     )
     fig.update_layout(
-        xaxis_title="Feature Importance Score",
+        xaxis_title="Importance",
         yaxis_title="Variable",
         template="plotly_white",
         height=500
