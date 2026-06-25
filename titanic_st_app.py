@@ -108,7 +108,7 @@ with right_col:
         prediction = lm2.predict(input_array)
         # st.subheader("Predicted Price")
         if prediction == 0:
-            st.write(f"We regret to inform you that your life insurance application has been rejected.Our data models suggest that while your health is excellent, your choice of transportation is historically terminal.")
+            st.write(f"We regret to inform you that your life insurance application has been rejected. Our data models suggest that while your health is excellent, your choice of transportation is historically terminal.")
         else:
             st.write("Congratulations! Based on your ticket class and the fact that you aren't a young man in third class, Lloyd's of London has approved your life insurance policy. Your premiums are low because, frankly, we think you're getting on a lifeboat.")
 
